@@ -1,0 +1,101 @@
+.wrapper {
+  font-family: "Barlow Condensed", sans-serif;
+  position: relative;
+  .home-wrapper {
+    display: flex;
+    background-color: #fefefe;
+    justify-content: center;
+    h1 {
+      position: absolute;
+      z-index: 2;
+      margin-top: 20px;
+      font-size: 50px;
+      color: #c9a26f;
+      text-shadow: 6px 5px 7px #3e2a10;
+      text-transform: uppercase;
+    }
+    .video {
+      height: 100vh;
+      width: 500px;
+      &.intro {
+        position: absolute;
+        animation: apperance 200ms;
+        &:hover {
+          filter: blur(0);
+        }
+      }
+      &.home {
+        position: relative;
+      }
+      @keyframes apperance {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .infor {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    h2 {
+      display: inline-block;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 3;
+      cursor: pointer;
+      &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        // width: 64px;
+        // height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: rgb(188, 86, 86) transparent rgb(182, 30, 30) transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+        z-index: 3;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    // .lds-dual-ring {
+    //   display: inline-block;
+    //   width: 80px;
+    //   height: 80px;
+    //   z-index: 3;
+    // }
+    // .lds-dual-ring:after {
+    //   content: " ";
+    //   display: block;
+    //   width: 64px;
+    //   height: 64px;
+    //   margin: 8px;
+    //   border-radius: 50%;
+    //   border: 6px solid #fff;
+    //   border-color: rgb(188, 86, 86) transparent rgb(182, 30, 30) transparent;
+    //   animation: lds-dual-ring 1.2s linear infinite;
+    //   z-index: 3;
+    // }
+    // @keyframes lds-dual-ring {
+    //   0% {
+    //     transform: rotate(0deg);
+    //   }
+    //   100% {
+    //     transform: rotate(360deg);
+    //   }
+    // }
+  }
+}
