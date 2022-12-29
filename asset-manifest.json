@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/deploy-github/static/css/main.9461b7e7.css",
-    "main.js": "/deploy-github/static/js/main.6ba23f27.js",
-    "static/js/787.a63e3161.chunk.js": "/deploy-github/static/js/787.a63e3161.chunk.js",
-    "index.html": "/deploy-github/index.html",
-    "main.9461b7e7.css.map": "/deploy-github/static/css/main.9461b7e7.css.map",
-    "main.6ba23f27.js.map": "/deploy-github/static/js/main.6ba23f27.js.map",
-    "787.a63e3161.chunk.js.map": "/deploy-github/static/js/787.a63e3161.chunk.js.map"
+    "main.css": "/Blogforme/static/css/main.9461b7e7.css",
+    "main.js": "/Blogforme/static/js/main.f97f1049.js",
+    "static/js/787.a63e3161.chunk.js": "/Blogforme/static/js/787.a63e3161.chunk.js",
+    "index.html": "/Blogforme/index.html",
+    "main.9461b7e7.css.map": "/Blogforme/static/css/main.9461b7e7.css.map",
+    "main.f97f1049.js.map": "/Blogforme/static/js/main.f97f1049.js.map",
+    "787.a63e3161.chunk.js.map": "/Blogforme/static/js/787.a63e3161.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9461b7e7.css",
-    "static/js/main.6ba23f27.js"
+    "static/js/main.f97f1049.js"
   ]
 }
