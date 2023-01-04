@@ -1,0 +1,58 @@
+.aboutPage {
+  z-index: -2 !important;
+
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .inforPage {
+    .detail-box {
+      display: flex;
+      div {
+        padding: 10px 20px;
+        min-width: 130px;
+      }
+      span {
+        padding: 10px 5px;
+      }
+    }
+  }
+
+  .imagePage {
+    margin-right: 20px;
+    height: 120px;
+    width: 120px;
+    img {
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.introMe {
+  padding: 10px 20px;
+  margin-top: 20px;
+  p {
+    font-size: 20px;
+    span {
+      font-weight: 600;
+    }
+    .namePage {
+      color: #c9a26f;
+    }
+  }
+}
+.gif {
+  height: 280px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 740px) {
+  .gif {
+    height: 170px;
+  }
+}

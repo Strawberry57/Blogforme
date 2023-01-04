@@ -1,0 +1,27 @@
+.wrapper_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .block_img {
+    max-width: 375px;
+    max-height: 225px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .block_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    a {
+      font-size: 25px;
+      padding: 10px 25px;
+      cursor: pointer;
+      ion-icon {
+        pointer-events: none;
+      }
+    }
+  }
+}

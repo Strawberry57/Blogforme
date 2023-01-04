@@ -1,13 +1,13 @@
 .wrapper {
   font-family: "Barlow Condensed", sans-serif;
-  position: relative;
   .home-wrapper {
     display: flex;
     background-color: #fefefe;
+    position: relative;
     justify-content: center;
     h1 {
       position: absolute;
-      z-index: 2;
+      z-index: 6;
       margin-top: 20px;
       font-size: 50px;
       color: #c9a26f;
@@ -26,6 +26,37 @@
       }
       &.home {
         position: relative;
+        z-index: 5;
+      }
+      &.mobileHome {
+        display: none;
+        margin-top: 100px;
+      }
+      &.isRight {
+        position: absolute;
+        animation: isRight 1.5s linear;
+        right: 0;
+      }
+      &.backRight {
+        position: absolute;
+        right: 34%;
+        animation: backRight 1.5s linear;
+      }
+      @keyframes backRight {
+        from {
+          right: 0;
+        }
+        to {
+          right: 34%;
+        }
+      }
+      @keyframes isRight {
+        from {
+          right: 34%;
+        }
+        to {
+          right: 0;
+        }
       }
       @keyframes apperance {
         from {
@@ -41,61 +72,107 @@
     position: absolute;
     top: 45%;
     left: 12%;
-    h2 {
-      display: inline-block;
-      text-transform: uppercase;
-      position: relative;
-      z-index: 3;
-      cursor: pointer;
-      &::after {
-        content: " ";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        // width: 64px;
-        // height: 64px;
-        margin: 8px;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        border-color: rgb(188, 86, 86) transparent rgb(182, 30, 30) transparent;
-        animation: lds-dual-ring 1.2s linear infinite;
-        z-index: 3;
+    z-index: 4;
+    animation: onbottom 1s linear;
+    &.infor_isClick {
+      animation: ontop 1s linear;
+      top: 20%;
+    }
+    @keyframes ontop {
+      from {
+        top: 45%;
       }
-      @keyframes lds-dual-ring {
-        0% {
-          transform: rotate(0deg);
+      to {
+        top: 20%;
+      }
+    }
+    @keyframes onbottom {
+      from {
+        top: 20%;
+      }
+      to {
+        top: 45%;
+      }
+    }
+  }
+  .pageDetail {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 4;
+    min-height: 30%;
+    width: 36%;
+    margin-left: 10px;
+    max-height: 75%;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+  }
+  .audio {
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    h2 {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+    h3 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: rgb(164, 62, 201);
+    }
+    .playList {
+      width: 300px;
+
+      .music {
+        list-style: none;
+        border: 1px solid;
+        padding: 5px 10px;
+        display: flex;
+        cursor: pointer;
+        .imageMusic {
+          cursor: pointer;
+          margin: 0px 10px;
+          height: 50px;
+          width: 60px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 50%;
+          }
         }
-        100% {
-          transform: rotate(360deg);
+        .nameMusic {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+
+          span {
+            cursor: pointer;
+            font-size: 12px;
+            padding: 5px;
+          }
+          .name {
+            font-weight: 700;
+            font-size: 20px;
+            padding: 0px 10px;
+          }
         }
       }
     }
-    // .lds-dual-ring {
-    //   display: inline-block;
-    //   width: 80px;
-    //   height: 80px;
-    //   z-index: 3;
-    // }
-    // .lds-dual-ring:after {
-    //   content: " ";
-    //   display: block;
-    //   width: 64px;
-    //   height: 64px;
-    //   margin: 8px;
-    //   border-radius: 50%;
-    //   border: 6px solid #fff;
-    //   border-color: rgb(188, 86, 86) transparent rgb(182, 30, 30) transparent;
-    //   animation: lds-dual-ring 1.2s linear infinite;
-    //   z-index: 3;
-    // }
-    // @keyframes lds-dual-ring {
-    //   0% {
-    //     transform: rotate(0deg);
-    //   }
-    //   100% {
-    //     transform: rotate(360deg);
-    //   }
-    // }
+  }
+  .source {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+    margin-right: 6px;
+    margin-bottom: 3px;
   }
 }
+
+@import "./mainPageResponsive.scss";
