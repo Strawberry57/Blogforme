@@ -1,18 +1,21 @@
 {
   "files": {
     "main.css": "/Blogforme/static/css/main.99d776d8.css",
-    "main.js": "/Blogforme/static/js/main.bacd564d.js",
+    "main.js": "/Blogforme/static/js/main.0a080182.js",
     "static/js/787.a63e3161.chunk.js": "/Blogforme/static/js/787.a63e3161.chunk.js",
+    "static/media/Danh-Mat-Em-Tinh-Lung.mp3": "/Blogforme/static/media/Danh-Mat-Em-Tinh-Lung.eef8de750bcd393a664f.mp3",
+    "static/media/Chi-Vi-Qua-Yeu-Anh-Dinh-Phu-Ni.mp3": "/Blogforme/static/media/Chi-Vi-Qua-Yeu-Anh-Dinh-Phu-Ni.62b24e3ad428f986c3e4.mp3",
+    "static/media/La-Anh-Mong-Nhien.mp3": "/Blogforme/static/media/La-Anh-Mong-Nhien.f416810628c5a8eb9250.mp3",
     "static/media/imgGif.gif": "/Blogforme/static/media/imgGif.ea801ebf40b2901cd6b7.gif",
     "static/media/contacct.png": "/Blogforme/static/media/contacct.8229af178aee829682b5.png",
     "static/media/avatar.jpg": "/Blogforme/static/media/avatar.0d3a225abb828245b868.jpg",
     "index.html": "/Blogforme/index.html",
     "main.99d776d8.css.map": "/Blogforme/static/css/main.99d776d8.css.map",
-    "main.bacd564d.js.map": "/Blogforme/static/js/main.bacd564d.js.map",
+    "main.0a080182.js.map": "/Blogforme/static/js/main.0a080182.js.map",
     "787.a63e3161.chunk.js.map": "/Blogforme/static/js/787.a63e3161.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99d776d8.css",
-    "static/js/main.bacd564d.js"
+    "static/js/main.0a080182.js"
   ]
 }
